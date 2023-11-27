@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
+    <title>LoginRegister</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(img/rsm.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; 
+            text-align: center; 
+            
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.5); 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            padding: 10px;
+            color: #020202;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <br />
+
+    <div class="container">
+
+        <h2>HESAP OLUŞTUR</h2>
+
+        <form action="#!" autocomplete="on" method="post" name="form_name" id="form_id">
+            
+            <tr>
+                <td>
+                    <input type="text" placeholder="İsim Soyisim..." id="name" name="name" title="AdSoyad" required autofocus="true" />
+                </td>
+            </tr>
+            <br />
+
+            <tr>
+                <td>
+                    <input type="email" placeholder="Email..." id="uemail" name="uemail" title="Emailiniz" required />
+                </td>
+            </tr>
+            <br />
+
+            <tr>
+                <td>
+                    <input type="password" placeholder="Şifreniz..." id="upassword" name="upassword" title="Şifreniz" required />
+                </td>
+            </tr>
+            <br />
+
+            <tr>
+                <td>
+                    <input type="password" placeholder="Şifrenizi tekrarlayın..." id="confirm-password" name="confirm-password" title="Şifreniz" required />
+                </td>
+            </tr>
+            
+            <br />
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                Hizmet Şartları'ndaki tüm beyanları kabul ediyorum!
+            </label>
+
+            <br />
+            <br />
+
+            <button type="submit">Kayıt Ol</button>
+
+            <p id="signup-message"></p>
+            <p>Zaten bir hesabınız var mı? <a href="login.html">Login here</a>.</p>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
